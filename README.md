@@ -259,14 +259,14 @@ int main(int argc, char const *argv[]) {
 
 Resources used
 ===
-*Libraries*
-Elma  
-C++ libararies such as iostream, json/json.h, map, string 
-sys/socket.h  
-netdb.h 
-arpa/inet.h 
+*Libraries* 
+Elma   
+C++ libararies such as iostream, json/json.h, map, string  
+sys/socket.h   
+netdb.h  
+arpa/inet.h  
 
-*Other References*
+*Other References* 
 https://www.cs.rutgers.edu/~pxk/417/notes/sockets/udp.html
 https://www.geeksforgeeks.org/socket-programming-cc/
 https://pubs.opengroup.org/onlinepubs/7908799/xns/syssocket.h.html
