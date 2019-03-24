@@ -32,8 +32,9 @@ You can build the docker environment, described in env/Dockerfile, yourself, wit
     docker build -t myelma .
     docker run -v $PWD:/source -it myelma bash
     make
-    ./examples/bin/heater
     ./examples/bin/thermostat
+    ./examples/bin/heater
+    
 ```
 
 Implementation
