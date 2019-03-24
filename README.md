@@ -155,16 +155,107 @@ The following are the steps I followed for the completion of this project.
 *Steps in implementing Thermostat(UDP Server) and Heater(UDP Client)*
 ---
 1. Thermostat listens to a predefined port for the messages from the Heater.  
-```
-```
 2. The internal Manager of the heater sends a message to turn on the heater. 
-```
-```
 3.  If the heater is on, it requests for a temperature value from the thermostat.  
-```
-```
 4. Thermostat sends back the requested temperature value  in JSON format. 
+
+**Heater class**
 ```
+class Heater : public Process {
+
+        public:
+
+        //! Create a new Heater component
+        Heater(int thermostatPort) : Process("roomHeater") {
+            port = thermostatPort;
+            temperature = -1;
+            running = true;
+        }
+
+        //! Set up watches for three events: "on", "off", and "set temperature".
+        //! The "set temperature" watcher expects events whose values are numerical.
+        void init() {
+            watch("on", [this](Event& e) {
+                start();  
+            });
+            watch("off", [this](Event &e) {
+                stop();
+            });
+            watch("set temperature", [this](Event& e) {
+                temperature = e.value();
+                log("Set heater temperature to " + to_string(temperature));
+            });
+        }
+
+        void log(string logText) {
+            cout<<"logging : "<< logText<<endl;
+        }
+
+        //! Set running to true
+        void start() {
+            // running = true;
+            update();
+            log("Heater started");
+        }
+
+        void stop() {
+            running = false;
+            log("Heater stopped");
+        }
+
+        void update() {
+            if(running) {
+                Udp_Client sender;
+                sender.sendMessage(port, "{\"operation\" : \"temperature\"}", [this](string message){
+                    json mesageJson = json::parse(message);
+                    cout<<mesageJson.dump()<<endl;
+                    if (mesageJson["value"].is_number()) {
+                        temperature = mesageJson["value"];
+                    }
+                    cout<<temperature<<endl;
+                });
+            }
+        }
+        bool running;
+        int temperature;
+        private:
+        int port;
+
+    };
+```
+
+**Thermostat class**
+```
+class Thermostat {
+
+        public:
+        Thermostat() {
+            temperature = 25;
+        }
+
+        int getTemperature() {
+            return temperature++;
+        }
+        private:
+        int temperature;
+    };
+int main(int argc, char const *argv[]) {
+    //! Start the server and listen for temperature reading 
+    int port = 8000; //Default port
+    if(argv[1]) {
+        port = atoi(argv[1]);
+    }
+    thermostat_example::Thermostat roomThermostat;
+    Udp_Server server(port);
+    server.start([&roomThermostat](string message) {
+        json mesageJson = json::parse(message);
+        string temp;
+        if (mesageJson["operation"] == "temperature") {
+            temp = to_string(roomThermostat.getTemperature());
+        }
+        return "{\"value\" : " + temp + "}";
+    });
+}
 ```
 
 Resources used
