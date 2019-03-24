@@ -1,6 +1,5 @@
 
-# Heater Implementation with a Remote Thermostat Using UDP
-===
+# Heater Implementation with a Remote Thermostat Using UDP 
 
 
 Introduction
