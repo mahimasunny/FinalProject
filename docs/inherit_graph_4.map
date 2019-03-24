@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classelma_1_1Manager.html" title="The Process Manager class. " alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node1" href="$classelma_1_1State.html" title="States for the StateMachine class. " alt="" coords="5,31,103,57"/>
+<area shape="rect" id="node2" href="$classheater__example_1_1HeaterOff.html" title="The state in which the Heater is off. " alt="" coords="151,5,347,32"/>
+<area shape="rect" id="node3" href="$classheater__example_1_1HeaterOn.html" title="The state in which the Heater is on. " alt="" coords="151,56,347,83"/>
 </map>

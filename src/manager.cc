@@ -18,25 +18,7 @@ namespace elma {
 
         return *this;
 
-    }
-
-    //! Add a channel to the manager
-    //! \param The channel to be added
-    //! \return A reference to the manager, for chaining
-    Manager& Manager::add_channel(Channel& channel) {
-        _channels[channel.name()] = &channel;
-        return *this;
-    }
-
-    //! Retrieve a reference to an existing channel. Throws an error if no such channel exists.
-    //! \return The channel requested.
-    Channel& Manager::channel(string name) {
-        if ( _channels.find(name) != _channels.end() ) {
-          return *(_channels[name]);
-        } else {
-            throw Exception("Tried to access an unregistered or non-existant channel.");
-        }
-    }    
+    }   
 
     //! Watch for an event associated with the given name.
     //! For watching events, you would typically register event handlers in your process'
@@ -108,7 +90,6 @@ namespace elma {
     //! Update all processes if enough time has passed. Usually not called directly.
     //! \return A reference to the manager, for chaining
     Manager& Manager::update() {
-        _client.process_responses();
         return all([this](Process& p) {
             if ( _elapsed > p.last_update() + p.period() ) {
                 p._update(_elapsed);

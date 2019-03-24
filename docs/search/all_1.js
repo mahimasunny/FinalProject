@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['basic_2ecc',['basic.cc',['../basic_8cc.html',1,'']]],
-  ['basicprocess',['BasicProcess',['../classbasic__example_1_1BasicProcess.html#a1f0385c21355b4b9ea3b2368c5ea415c',1,'basic_example::BasicProcess']]],
-  ['basicprocess',['BasicProcess',['../classbasic__example_1_1BasicProcess.html',1,'basic_example']]]
+  ['current',['current',['../classelma_1_1StateMachine.html#a0793bb63c6a6290b44d578b1ef08cbb8',1,'elma::StateMachine']]]
 ];

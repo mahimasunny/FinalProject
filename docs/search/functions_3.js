@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['delta',['delta',['../classelma_1_1Process.html#ae2c6efe05132c558fe44c0cf301113e2',1,'elma::Process']]],
-  ['doorclosedoff',['DoorClosedOff',['../classmicrowave__example_1_1DoorClosedOff.html#adc28996dff5bce6438b2640eccd46d35',1,'microwave_example::DoorClosedOff']]],
-  ['doorclosedon',['DoorClosedOn',['../classmicrowave__example_1_1DoorClosedOn.html#ab2e88cb412c6000e6f97aa6477314e7b',1,'microwave_example::DoorClosedOn']]],
-  ['dooropen',['DoorOpen',['../classmicrowave__example_1_1DoorOpen.html#ada10a7c5bf36b1e97a679058a4fca8fb',1,'microwave_example::DoorOpen']]],
-  ['driver',['Driver',['../classdriving__example_1_1Driver.html#ae7b8d5878f63e5c4376ffa9eadb0c62e',1,'driving_example::Driver']]],
-  ['during',['during',['../classelma_1_1State.html#aa4ff01f2cd8c6e78d90461f6a5d914c4',1,'elma::State::during()'],['../classmicrowave__example_1_1DoorClosedOff.html#a128ff3a479f5226e5d7d167179a4a35c',1,'microwave_example::DoorClosedOff::during()'],['../classmicrowave__example_1_1DoorClosedOn.html#a82d9845114add5930f2c00ae6f3ddec7',1,'microwave_example::DoorClosedOn::during()'],['../classmicrowave__example_1_1DoorOpen.html#a5b67f0f78ec7d1881494e70c5933f299',1,'microwave_example::DoorOpen::during()'],['../classtoggle__switch__example_1_1Mode.html#a8e29db751bc6e110d802c60bc17c370d',1,'toggle_switch_example::Mode::during()']]]
+  ['elapsed',['elapsed',['../classelma_1_1Manager.html#ae6498164a8e790e474510f02618981d0',1,'elma::Manager']]],
+  ['emit',['emit',['../classelma_1_1Manager.html#a7dd4bc0f5774f6ac6c2dcf6c802d2418',1,'elma::Manager::emit()'],['../classelma_1_1State.html#a2c1d2a5be2fc2635d3c055584bc1ff70',1,'elma::State::emit()']]],
+  ['empty',['empty',['../classelma_1_1Event.html#a73ba4c7ae6bc121f8ea42a3fde09ae0d',1,'elma::Event']]],
+  ['entry',['entry',['../classelma_1_1State.html#a6915b655c0975dd488e4e32a4ab62a03',1,'elma::State::entry()'],['../classheater__example_1_1HeaterOff.html#a800aa9c3a39c6a482414481645642ec1',1,'heater_example::HeaterOff::entry()'],['../classheater__example_1_1HeaterOn.html#a44d9f47ab133fd3eaa0e43a8e26d02e7',1,'heater_example::HeaterOn::entry()']]],
+  ['event',['Event',['../classelma_1_1Event.html#a2b1b7657420bbbebb81f1c59cc8fda96',1,'elma::Event']]],
+  ['exit',['exit',['../classelma_1_1State.html#ad0dcc51dbc4dfdfd0704a939389d289d',1,'elma::State::exit()'],['../classheater__example_1_1HeaterOff.html#af60330e087b7cfd099484660d218073d',1,'heater_example::HeaterOff::exit()'],['../classheater__example_1_1HeaterOn.html#a2c8a90a4c8b2210297f684d1cfbd78fb',1,'heater_example::HeaterOn::exit()']]]
 ];

@@ -98,15 +98,11 @@ namespace elma {
         inline high_resolution_clock::duration previous_update() { return _previous_update; }
 
         // documentation for these methods is in process.cc
-        Channel& channel(string name);
         double milli_time();
         double delta();
 
         void watch(string event_name, std::function<void(Event&)> handler);
         void emit(const Event& event);
-
-        void http_get(std::string url, std::function<void(json&)> handler);
-
         private:
 
         // Manager interface

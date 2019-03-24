@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['manager',['Manager',['../classelma_1_1Manager.html#acab31d0187990cf28cc4d56ef3e63e28',1,'elma::Manager']]],
-  ['milli_5ftime',['milli_time',['../classelma_1_1Process.html#a713075c26ec23e09576ec966fb4be6ea',1,'elma::Process']]],
-  ['mode',['Mode',['../classtoggle__switch__example_1_1Mode.html#a84e096c4d86cd98d0f5706cf00ce5204',1,'toggle_switch_example::Mode']]]
+  ['operator_22_22_5fms',['operator&quot;&quot;_ms',['../namespaceelma.html#a4fadf90d54b32e86a486f6699fe0026b',1,'elma']]],
+  ['operator_22_22_5fs',['operator&quot;&quot;_s',['../namespaceelma.html#a919d1835ee4b39d96e7664ecd41c1eeb',1,'elma']]],
+  ['operator_22_22_5fus',['operator&quot;&quot;_us',['../namespaceelma.html#a466c7a7bbc970301dc2f500646160bdf',1,'elma']]]
 ];

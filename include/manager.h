@@ -48,23 +48,15 @@ namespace elma {
         //! \return The duration of time since the manager was most recently started
         inline high_resolution_clock::duration elapsed() { return _elapsed; }
 
-        // Channel Interface
-        Manager& add_channel(Channel&);
-        Channel& channel(string);
-
         // Event Interface
         Manager& watch(string event_name, std::function<void(Event&)> handler);
         Manager& emit(const Event& event);
-        Client& client() { return _client; }
 
         private:
         vector<Process *> _processes;
-        map<string, Channel *> _channels;
         map<string, vector<std::function<void(Event&)>>> event_handlers;
         high_resolution_clock::time_point _start_time;
         high_resolution_clock::duration _elapsed;
-        Client _client;
-
     };
 
 }

@@ -3,19 +3,6 @@
 
 namespace elma {
 
-    //! Access a channel with the given name
-    /*!
-      \param name The name of the channel
-      \return A reference to the channel
-    */
-    Channel& Process::channel(string name) {
-        if ( _manager_ptr == NULL ) {
-            throw Exception("Cannot access channels in a process before the process is scheduled.");
-        } else {
-            return _manager_ptr->channel(name);
-        }
-    }
-
     void Process::watch(string event_name, std::function<void(Event&)> handler) {
         if ( _manager_ptr == NULL ) {
             throw Exception("Cannot access events in a process before the process is scheduled.");
@@ -30,10 +17,6 @@ namespace elma {
         } else {        
             _manager_ptr->emit(event);
         }
-    }
-
-    void Process::http_get(std::string url, std::function<void(json&)> handler) {
-        _manager_ptr->client().get(url,handler);
     }
 
     //! The time since the last update in millisconds, as a double

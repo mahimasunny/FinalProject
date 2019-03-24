@@ -29,6 +29,14 @@ WORKDIR /usr/local/include/json
 RUN curl -O -J -L https://github.com/nlohmann/json/releases/download/v3.5.0/json.hpp
 RUN mv json.hpp json.h
 
+# # Build sys/socket.h
+# WORKDIR /tmp
+# RUN git clone https://github.com/openbsd/src.git
+# RUN mkdir /usr/local/include/openbsd
+# RUN mv /tmp/src/sys/sys/socket.h /usr/local/include/openbsd
+# RUN rm -r /tmp/src/sys
+# EXPOSE 8080
+
 # Install httplib
 WORKDIR /tmp
 RUN git clone https://github.com/klavins/cpp-httplib.git

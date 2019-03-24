@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,6 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -98,15 +100,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceelma.html">elma</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    constexpr high_resolution_clock::duration <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span> _s ( <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> x ) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceelma.html#a919d1835ee4b39d96e7664ecd41c1eeb">   13</a></span>&#160;    constexpr high_resolution_clock::duration <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span> _s ( <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> x ) {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordflow">return</span> high_resolution_clock::duration(seconds(x));</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }        </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    constexpr high_resolution_clock::duration <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span> _ms ( <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> x ) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceelma.html#a4fadf90d54b32e86a486f6699fe0026b">   18</a></span>&#160;    constexpr high_resolution_clock::duration <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span> _ms ( <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> x ) {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> high_resolution_clock::duration(milliseconds(x));</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    constexpr high_resolution_clock::duration <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span> _us ( <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> x ) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceelma.html#a466c7a7bbc970301dc2f500646160bdf">   23</a></span>&#160;    constexpr high_resolution_clock::duration <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span> _us ( <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> x ) {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> high_resolution_clock::duration(microseconds(x));</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }    </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
@@ -114,12 +116,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespacestd_1_1chrono_html"><div class="ttname"><a href="namespacestd_1_1chrono.html">chrono</a></div></div>
-<div class="ttc" id="namespaceelma_html"><div class="ttname"><a href="namespaceelma.html">elma</a></div><div class="ttdef"><b>Definition:</b> <a href="channel_8cc_source.html#l00005">channel.cc:5</a></div></div>
+<div class="ttc" id="namespaceelma_html"><div class="ttname"><a href="namespaceelma.html">elma</a></div><div class="ttdoc">UDP Client class. </div><div class="ttdef"><b>Definition:</b> <a href="manager_8cc_source.html#l00005">manager.cc:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
   <hr class="footer"/><address class="footer"><small>
   Developed by <a href="http://klavinslab.org">Eric Klavins</a> for UW ECE P 520<br>
-  Generated on Fri Mar 8 2019 17:39:22 for Elma by &#160;<a href="http://www.doxygen.org/index.html">
+  Generated on Sun Mar 24 2019 06:13:03 for Elma by &#160;<a href="http://www.doxygen.org/index.html">
   Doxygen
   </a> 1.8.8
   </small></address>
