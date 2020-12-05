@@ -4,7 +4,7 @@
 
 Introduction
 ===
-User Datagram Protocol(UDP) is used in internet applications to implement low-latency and loss-tolerating commenction. UDP enalbles a process to process communication. This project aims to implement a bidirectional UDP message transferring mechanism between a UDP client and a UDP Server.
+User Datagram Protocol(UDP) is used in internet applications to implement low-latency and loss-tolerating connection. UDP enables a process to process communication. This project aims to implement a bidirectional UDP message transferring mechanism between a UDP client and a UDP Server.
 
 
 Project Details
